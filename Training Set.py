@@ -1,9 +1,5 @@
 #!/usr/bin/env python
 # coding: utf-8
-
-# In[ ]:
-
-
 import numpy 
 from pprint import pprint
 import tensorflow
@@ -37,15 +33,6 @@ def typeID(ID,elementList):
     return elementlist[ID]
 
 
-# In[ ]:
-
-
-
-
-
-# In[ ]:
-
-
 def generateValidationSet(data,ratio = 0.1):
     length = len(data)
     numValidation = int(length*ratio)
@@ -55,34 +42,4 @@ def generateValidationSet(data,ratio = 0.1):
     trainingDataIDs = list(set(IDs)-set(numValidation))
     
     return trainingDataIDs, validationDataIDs
-
-
-# In[ ]:
-
-
-
-
-
-# In[ ]:
-
-
-
-
-
-# In[ ]:
-
-
-
-
-
-# In[ ]:
-
-
-
-
-
-# In[ ]:
-
-
-
 
